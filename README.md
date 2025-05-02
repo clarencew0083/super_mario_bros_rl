@@ -37,11 +37,11 @@ pip install -r requirements.txt
 ---
 
 ## File Directory ##
-[Model](ddqn.py) contains the Dueling Deep Q Network used for training the Mario agent. \n
-[Agent](agent.py) contains code the defines the agent, how it steos in the environment and how it is trained \n
-[Replay Buffer](replay_buffer.py) contains the code for the prioritized experience replay buffer \n
-[Helper Functions](ulility.py) contains helper function to save model chkecpoints when training \n
-[Wapper](ulility.py) conntains a wrapper used for prerocessing
+* [Model](ddqn.py) contains the Dueling Deep Q Network used for training the Mario agent. 
+* [Agent](agent.py) contains code the defines the agent, how it steos in the environment and how it is trained 
+* [Replay Buffer](replay_buffer.py) contains the code for the prioritized experience replay buffer
+* [Helper Functions](ulility.py) contains helper function to save model chkecpoints when training
+* [Wapper](ulility.py) conntains a wrapper used for prerocessing
 
 ## 📦 Usage
 
@@ -53,7 +53,7 @@ python smb_proj.py
 
 This will train a DDQN agent on level 1-1 of *Super Mario Bros.* using the Right-Only action space.
 
-Alternative, there is a jupyter notebook named demo.ipynb, If you prefer to run code in that manner.
+Alternative, there is a jupyter notebook named demo.ipynb, if you prefer to run code in that manner.
 
 
 
@@ -89,9 +89,7 @@ Training was performed using an NVIDIA A100 GPU over \~23 hours wall time.
 ## 📈 Future Work
 
 * Incorporate **curriculum learning** to progressively increase level difficulty
-* Implement **double Q-learning** for reduced overestimation bias
 * Optimize replay buffer retention to avoid forgetting rare, high-value experiences
-* Explore **frame-skipping** and **multi-step returns** for more stable learning
 
 ---
 
