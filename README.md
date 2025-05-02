@@ -80,15 +80,13 @@ Training was performed using an NVIDIA A100 GPU over \~23 hours wall time.
 
 * Catastrophic forgetting was observed, where the agent regressed to dying early after previously achieving high scores.
 * The agent showed basic transfer capabilities to level 8-1 but struggled with more complex enemy and platform configurations.
-* Reward trajectory plots and frame visualizations are included in the `results/` folder.
-
-![Training Reward Curve](results/reward_curve.png)
+* Videos for the trained Mario agent are in the [videos](videos/) folder
 
 ---
 
 ## 📈 Future Work
 
-* Incorporate **curriculum learning** to progressively increase level difficulty
+* Incorporate **curriculum learning** to continue learning
 * Optimize replay buffer retention to avoid forgetting rare, high-value experiences
 
 ---
