@@ -93,13 +93,10 @@ Training was performed using an NVIDIA A100 GPU over \~23 hours wall time.
 
 ## 📚 References
 
-References
-
 * Christian Kauten. Super Mario Bros for OpenAI Gym. GitHub, 2018.
 
 * Volodymyr Mnih, Koray Kavukcuoglu, David Silver, Alex Graves, Ioannis Antonoglou,
-Daan Wierstra, and Martin Riedmiller. Playing atari with deep reinforcement learning,
-2013. 
+Daan Wierstra, and Martin Riedmiller. Playing atari with deep reinforcement learning, 2013. 
 
 * “Train a Mario-Playing RL Agent — PyTorch Tutorials 1.8.1+Cu102 Documentation.” Pytorch.org, pytorch.org/tutorials/intermediate/mario_rl_tutorial.html.
 
