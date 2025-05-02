@@ -21,7 +21,7 @@ git clone https://github.com/clarencew0083/super_mario_bros_rl.git
 cd super_mario_bros_rl
 ```
 
-### Set up a virtual environment (optional but recommended)
+### Set up a virtual environment (recommended Python 3.10.12)
 
 ```bash
 python3 -m venv venv
