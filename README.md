@@ -17,8 +17,8 @@ Key features include:
 Clone the repository and set up the required environment:
 
 ```bash
-git clone https://github.com/your-username/mario-ddqn.git
-cd mario-ddqn
+git clone https://github.com/clarencew0083/super_mario_bros_rl.git
+cd super_mario_bros_rl
 ```
 
 ### Set up a virtual environment (optional but recommended)
@@ -34,39 +34,28 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-**Dependencies include:**
-
-* `gym-super-mario-bros`
-* `nes-py`
-* `numpy`
-* `torch`
-* `opencv-python`
-* `matplotlib`
-* `tqdm`
-
-Ensure you have a working installation of `gymnasium` or `gym` if using an updated backend.
-
 ---
+
+## File Directory ##
+[ddqn.py] contains the Dueling Deep Q Network used for training the Mario agent.
+[agent.py] contains code the defines the agent, how it steos in the environment and how it is trained
+[replay_buffer.py] contains the code for the prioritized experience replay buffer
+[ultility.py] contains helper function to save model chkecpoints when training
+[wrapper.py] conntains a wrapper used for prerocessing
 
 ## 📦 Usage
 
 ### Run Training
 
 ```bash
-python train.py
+python smb_proj.py
 ```
 
 This will train a DDQN agent on level 1-1 of *Super Mario Bros.* using the Right-Only action space.
 
-### Test a Trained Model
+Alternative, there is a jupyter notebook named demo.ipynb, If you prefer to run code in that manner.
 
-```bash
-python test.py --model-path models/mario_ddqn.pth --env-name SuperMarioBros-1-1-v0
-```
 
-You can also evaluate the agent on unseen levels by changing the `--env-name` argument, e.g., `SuperMarioBros-8-1-v0`.
-
----
 
 ## 🧠 Training Details
 
@@ -89,7 +78,6 @@ Training was performed using an NVIDIA A100 GPU over \~23 hours wall time.
 
 ## 📊 Results
 
-* The agent successfully completed level 1-1 after \~2300 episodes.
 * Catastrophic forgetting was observed, where the agent regressed to dying early after previously achieving high scores.
 * The agent showed basic transfer capabilities to level 8-1 but struggled with more complex enemy and platform configurations.
 * Reward trajectory plots and frame visualizations are included in the `results/` folder.
