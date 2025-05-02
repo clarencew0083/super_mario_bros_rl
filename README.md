@@ -4,7 +4,7 @@ This project applies deep reinforcement learning to train an autonomous agent to
 
 Key features include:
 
-* 📦 **Environment**: `gym-super-mario-bros` from OpenAI Gym Retro
+* 📦 **Environment**: `gym-super-mario-bros` from OpenAI Gym Retro https://github.com/Kautenja/gym-super-mario-bros
 * 🧠 **Model**: Dueling DQN with convolutional layers and prioritized experience replay
 * 🛠️ **Training Tools**: Frame preprocessing (resizing, grayscaling, stacking), epsilon-greedy exploration, and target network updates
 * 🧪 **Testing**: Performance evaluated on both seen (1-1) and unseen (8-1) levels
