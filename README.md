@@ -115,4 +115,3 @@ Training was performed using an NVIDIA A100 GPU over \~23 hours wall time.
 
 ---
 
-Let me know if you'd like help adding badges (e.g., for license, build status) or integrating visuals like gameplay GIFs.
