@@ -37,11 +37,11 @@ pip install -r requirements.txt
 ---
 
 ## File Directory ##
-[ddqn.py] contains the Dueling Deep Q Network used for training the Mario agent.
-[agent.py] contains code the defines the agent, how it steos in the environment and how it is trained
-[replay_buffer.py] contains the code for the prioritized experience replay buffer
-[ultility.py] contains helper function to save model chkecpoints when training
-[wrapper.py] conntains a wrapper used for prerocessing
+[Model](ddqn.py) contains the Dueling Deep Q Network used for training the Mario agent.
+[Agent](agent.py) contains code the defines the agent, how it steos in the environment and how it is trained
+[Replay Buffer](replay_buffer.py) contains the code for the prioritized experience replay buffer
+[Helper Functions](ulility.py) contains helper function to save model chkecpoints when training
+[Wapper](ulility.py) conntains a wrapper used for prerocessing
 
 ## 📦 Usage
 
