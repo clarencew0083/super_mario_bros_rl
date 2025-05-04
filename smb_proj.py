@@ -22,8 +22,8 @@ if __name__ == "__main__":
     env = GrayScaleObservation(env)
     env = FrameStack(env, num_stack=4, lz4_compress=True) # Stack 4 frames
 
-
-    episodes = 1
+    # adjust number of episodes as desired
+    episodes = 4
     batch_size = 64 # Set a batch size
     scores = []
     eps_history = []
